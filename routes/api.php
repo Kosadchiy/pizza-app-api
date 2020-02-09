@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/orders/check', 'Api\OrderController@check');
+Route::post('/orders/confirm', 'Api\OrderController@confirm');
+
+Route::resources([
+    'menu' => 'Api\MenuController'
+]);
