@@ -7,7 +7,6 @@ use App\Http\Requests\CheckOrderItems;
 use App\Http\Requests\ConfirmOrder;
 use App\Repositories\Contracts\RepositoryInterface;
 use App\Services\Contracts\OrderServiceInterface;
-use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
@@ -23,7 +22,9 @@ class OrderController extends Controller
     public function index()
     {
         $orders = $this->orderRepository->index();
-        return response()->json($orders);
+        return response()->json([
+            'items' => $orders
+        ]);
     }
 
     public function check(CheckOrderItems $request)

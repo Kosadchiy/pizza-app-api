@@ -23,7 +23,7 @@ class OrderRepository implements RepositoryInterface
     public function create(array $data)
     {
         try {
-            $user = Auth::user();
+            $user = auth()->guard('api')->user();
             if ($user) {
                 $data['user_id'] = $user->id;
             }
