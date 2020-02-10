@@ -15,6 +15,7 @@ Route::post('/register', 'Api\UserController@register');
 
 Route::middleware('auth:api')->group(function () {
     Route::get('/user', 'Api\UserController@user');
+    Route::get('/orders', 'Api\OrderController@index');
 });
 
 Route::post('/orders/check', 'Api\OrderController@check');
