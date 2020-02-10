@@ -29,10 +29,7 @@ class OrderService implements OrderServiceInterface
             return $data;
         } catch (\Throwable $th) {
             Log::error($th->getMessage());
-            return [
-                'error' => true,
-                'message' => $th->getMessage() 
-            ];
+            throw $th;
         }
     }
 }

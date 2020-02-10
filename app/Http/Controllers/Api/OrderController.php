@@ -39,9 +39,6 @@ class OrderController extends Controller
             return response()->json($data);
         }
         $order = $this->orderRepository->create($data);
-        if (isset($order['error']) && $order['error'] === true) {
-            return response()->json($order, 500);
-        } 
         return response()->json($order);
     }
 }
