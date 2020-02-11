@@ -1,6 +1,6 @@
 # pizza-app-api
 
-This is an api of simple pizza ordering application [https://intense-dawn-57086.herokuapp.com/](https://intense-dawn-57086.herokuapp.com/).
+This is an api of simple pizza ordering application [https://secure-depths-00768.herokuapp.com/](https://secure-depths-00768.herokuapp.com/).
 
 Deploy:
 - Clone repository.
