@@ -176,6 +176,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\RepositoryServiceProvider::class,
         App\Providers\OrderServiceProvider::class,
+        App\Providers\CurrencyServiceProvider::class
 
     ],
 

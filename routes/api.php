@@ -20,6 +20,7 @@ Route::middleware('auth:api')->group(function () {
 
 Route::post('/orders/check', 'Api\OrderController@check');
 Route::post('/orders/confirm', 'Api\OrderController@confirm');
+Route::get('/currency/usd-rate', 'Api\CurrencyController@getUSDRate');
 
 Route::resources([
     'menu' => 'Api\MenuController'
