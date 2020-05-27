@@ -1,6 +1,6 @@
 # pizza-app-api
 
-This is an api of simple pizza ordering application [https://shielded-wave-64423.herokuapp.com/](https://shielded-wave-64423.herokuapp.com/).
+This is an api of simple pizza ordering application.
 
 Deploy:
 - Clone repository.
